@@ -17,13 +17,19 @@ import java.util.TimerTask;
  * author：xiedong
  * date：2019/5/22
  */
-public class BannerViewGroup extends ViewGroup {
+public class BannerView extends ViewGroup {
     private int childrenCount;
     private int childrenWidth;
     private int childernHeight;
     private int oldX;
     private int currentIndex;  //当前子view索引
     private Scroller scroller;
+    private BannerItemClickListener itemClickListener;
+    private boolean isClick;  //标志是否为点击事件
+
+    public void setItemClickListener(BannerItemClickListener itemClickListener) {
+        this.itemClickListener = itemClickListener;
+    }
 
     //自动轮播
     private boolean isAutoPlay = true; //默认开启
@@ -52,15 +58,15 @@ public class BannerViewGroup extends ViewGroup {
         isAutoPlay = false;
     }
 
-    public BannerViewGroup(Context context) {
+    public BannerView(Context context) {
         this(context, null);
     }
 
-    public BannerViewGroup(Context context, AttributeSet attrs) {
+    public BannerView(Context context, AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public BannerViewGroup(Context context, AttributeSet attrs, int defStyleAttr) {
+    public BannerView(Context context, AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         initConfig();
     }
@@ -203,12 +209,14 @@ public class BannerViewGroup extends ViewGroup {
         switch (event.getAction()) {
             case MotionEvent.ACTION_DOWN:
                 stopAutoPlay(); //解决手指按下时banner仍然自动轮播
+                isClick = true;
                 if (!scroller.isFinished()) {
                     scroller.abortAnimation();
                 }
                 oldX = (int) event.getX();
                 break;
             case MotionEvent.ACTION_MOVE:
+                isClick = false;//滑动时，isClick为false，代表为滑动事件，非点击
                 int currentX = (int) event.getX();
                 int distance = currentX - oldX;
                 scrollBy(-distance, 0); //只在X轴上发生偏移，Y轴不变
@@ -224,12 +232,21 @@ public class BannerViewGroup extends ViewGroup {
                     currentIndex = childrenCount - 1;
                 }
 
-                //1.利用scroller完成轮播
-                int dx = currentIndex * childrenWidth - scrollX;
-                scroller.startScroll(scrollX, 0, dx, 0);
-                postInvalidate();
 
-                 //1.利用scrollTo完成轮播
+                //手指抬起的时候判断是否为点击事件
+                if (isClick) {
+                    if (itemClickListener != null) {
+                        itemClickListener.onItemClick(currentIndex);
+                    }
+                } else {
+                    //1.利用scroller完成轮播
+                    int dx = currentIndex * childrenWidth - scrollX;
+                    scroller.startScroll(scrollX, 0, dx, 0);
+                    postInvalidate();
+                }
+
+
+                //2.利用scrollTo完成轮播
 //                scrollTo(currentIndex * childrenWidth, 0);
                 break;
             case MotionEvent.ACTION_CANCEL:
