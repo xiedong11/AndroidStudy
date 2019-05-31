@@ -28,7 +28,9 @@
         <activity android:name=".layout_activity.StaggeredGridLayoutActivity" />
         <activity android:name=".layout_activity.AllLayoutHelperActivity" />
         <activity android:name=".layout_activity.LayoutMainActivity" />
-        <activity android:name=".view_activity.ViewMainActivity"></activity>
+        <activity android:name=".view_activity.ViewMainActivity" />
+        <activity android:name=".view_activity.ViewDragHelperActivity" />
+        <activity android:name=".view_activity.view.BannerViewAcitivity"></activity>
     </application>
 
 </manifest>
