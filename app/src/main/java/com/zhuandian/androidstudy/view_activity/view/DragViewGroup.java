@@ -60,6 +60,11 @@ public class DragViewGroup extends FrameLayout {
     };
 
 
+    /**
+     * 重写onInterceptTouchEvent 、onTouchEvent事件拦截处理，将事件交由 viewDragHelper进行处理
+     *
+     * @return
+     */
     @Override
     public boolean onInterceptTouchEvent(MotionEvent ev) {
         return viewDragHelper.shouldInterceptTouchEvent(ev);
