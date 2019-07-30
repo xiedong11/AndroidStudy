@@ -9,6 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity android:name=".FlutterMainActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -30,7 +31,8 @@
         <activity android:name=".layout_activity.LayoutMainActivity" />
         <activity android:name=".view_activity.ViewMainActivity" />
         <activity android:name=".view_activity.ViewDragHelperActivity" />
-        <activity android:name=".view_activity.view.BannerViewAcitivity"></activity>
+        <activity android:name=".view_activity.view.BannerViewAcitivity" />
+        <activity android:name=".notification_activity.NotificationActivity" />
     </application>
 
 </manifest>
