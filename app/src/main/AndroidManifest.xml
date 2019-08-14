@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".FlutterMainActivity"></activity>
+        <activity android:name=".activity.AnnotationActivity"></activity>
+        <activity android:name=".FlutterMainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -17,22 +18,22 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".layout_activity.LinearLayoutActivity" />
-        <activity android:name=".layout_activity.GridLayoutActivity" />
-        <activity android:name=".layout_activity.FixLayoutActivity" />
-        <activity android:name=".layout_activity.ScrollFixLayoutActivity" />
-        <activity android:name=".layout_activity.FloatLayoutActivity" />
-        <activity android:name=".layout_activity.ColumnLayoutActivity" />
-        <activity android:name=".layout_activity.SingleLayoutActivity" />
-        <activity android:name=".layout_activity.OnePlusNLayoutActivity" />
-        <activity android:name=".layout_activity.StickLayoutActivity" />
-        <activity android:name=".layout_activity.StaggeredGridLayoutActivity" />
-        <activity android:name=".layout_activity.AllLayoutHelperActivity" />
-        <activity android:name=".layout_activity.LayoutMainActivity" />
+        <activity android:name=".activity.layout_activity.LinearLayoutActivity" />
+        <activity android:name=".activity.layout_activity.GridLayoutActivity" />
+        <activity android:name=".activity.layout_activity.FixLayoutActivity" />
+        <activity android:name=".activity.layout_activity.ScrollFixLayoutActivity" />
+        <activity android:name=".activity.layout_activity.FloatLayoutActivity" />
+        <activity android:name=".activity.layout_activity.ColumnLayoutActivity" />
+        <activity android:name=".activity.layout_activity.SingleLayoutActivity" />
+        <activity android:name=".activity.layout_activity.OnePlusNLayoutActivity" />
+        <activity android:name=".activity.layout_activity.StickLayoutActivity" />
+        <activity android:name=".activity.layout_activity.StaggeredGridLayoutActivity" />
+        <activity android:name=".activity.layout_activity.AllLayoutHelperActivity" />
+        <activity android:name=".activity.layout_activity.LayoutMainActivity" />
         <activity android:name=".view_activity.ViewMainActivity" />
         <activity android:name=".view_activity.ViewDragHelperActivity" />
         <activity android:name=".view_activity.view.BannerViewAcitivity" />
-        <activity android:name=".notification_activity.NotificationActivity" />
+        <activity android:name=".activity.notification_activity.NotificationActivity" />
     </application>
 
 </manifest>

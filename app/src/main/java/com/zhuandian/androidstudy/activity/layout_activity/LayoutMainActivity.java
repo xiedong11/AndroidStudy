@@ -1,4 +1,4 @@
-package com.zhuandian.androidstudy.layout_activity;
+package com.zhuandian.androidstudy.activity.layout_activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;

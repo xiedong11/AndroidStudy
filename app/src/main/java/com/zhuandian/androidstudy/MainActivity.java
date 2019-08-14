@@ -6,8 +6,9 @@ import android.os.Bundle;
 import android.view.View;
 
 
-import com.zhuandian.androidstudy.layout_activity.LayoutMainActivity;
-import com.zhuandian.androidstudy.notification_activity.NotificationActivity;
+import com.zhuandian.androidstudy.activity.AnnotationActivity;
+import com.zhuandian.androidstudy.activity.layout_activity.LayoutMainActivity;
+import com.zhuandian.androidstudy.activity.notification_activity.NotificationActivity;
 import com.zhuandian.androidstudy.view_activity.ViewMainActivity;
 
 import io.flutter.view.FlutterMain;
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_view).setOnClickListener(this);
         findViewById(R.id.btn_notification).setOnClickListener(this);
         findViewById(R.id.btn_flutter_aar).setOnClickListener(this);
+        findViewById(R.id.btn_annotation).setOnClickListener(this);
+
 
 
 
@@ -44,6 +47,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_flutter_aar:
                 FlutterMain.startInitialization(this);
                 startActivity(new Intent(MainActivity.this, com.zhuandian.flutter_app.MainActivity.class));
+                break;
+            case R.id.btn_annotation:
+                startActivity(new Intent(MainActivity.this, AnnotationActivity.class));
                 break;
         }
     }

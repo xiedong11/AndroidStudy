@@ -1,4 +1,4 @@
-package com.zhuandian.androidstudy.notification_activity;
+package com.zhuandian.androidstudy.activity.notification_activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
