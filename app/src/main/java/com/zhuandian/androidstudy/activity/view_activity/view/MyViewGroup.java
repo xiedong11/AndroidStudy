@@ -1,4 +1,4 @@
-package com.zhuandian.androidstudy.view_activity.view;
+package com.zhuandian.androidstudy.activity.view_activity.view;
 
 import android.content.Context;
 import android.view.MotionEvent;

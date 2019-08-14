@@ -9,10 +9,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name="com.zhuandian.AopTestActivity"></activity>
+        <activity android:name=".activity.AopTestActivity"></activity>
         <activity android:name=".AopTestActivity" />
         <activity android:name=".activity.AnnotationActivity" />
-        <activity android:name=".FlutterMainActivity" />
+        <activity android:name=".activity.FlutterMainActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -32,9 +32,9 @@
         <activity android:name=".activity.layout_activity.StaggeredGridLayoutActivity" />
         <activity android:name=".activity.layout_activity.AllLayoutHelperActivity" />
         <activity android:name=".activity.layout_activity.LayoutMainActivity" />
-        <activity android:name=".view_activity.ViewMainActivity" />
-        <activity android:name=".view_activity.ViewDragHelperActivity" />
-        <activity android:name=".view_activity.view.BannerViewAcitivity" />
+        <activity android:name=".activity.view_activity.ViewMainActivity" />
+        <activity android:name=".activity.view_activity.ViewDragHelperActivity" />
+        <activity android:name=".activity.view_activity.view.BannerViewAcitivity" />
         <activity android:name=".activity.notification_activity.NotificationActivity" />
     </application>
 

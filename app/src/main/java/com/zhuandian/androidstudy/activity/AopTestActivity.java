@@ -1,4 +1,4 @@
-package com.zhuandian;
+package com.zhuandian.androidstudy.activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

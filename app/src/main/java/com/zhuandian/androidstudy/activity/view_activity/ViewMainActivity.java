@@ -1,15 +1,12 @@
-package com.zhuandian.androidstudy.view_activity;
+package com.zhuandian.androidstudy.activity.view_activity;
 
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Toast;
 
 import com.zhuandian.androidstudy.R;
-import com.zhuandian.androidstudy.view_activity.view.BannerViewAcitivity;
-import com.zhuandian.androidstudy.view_activity.view.banner.BannerItemClickListener;
-import com.zhuandian.androidstudy.view_activity.view.banner.BannerView;
+import com.zhuandian.androidstudy.activity.view_activity.view.BannerViewAcitivity;
 
 public class ViewMainActivity extends AppCompatActivity implements View.OnClickListener {
 

@@ -1,5 +1,5 @@
 
-package com.zhuandian.androidstudy.view_activity;
+package com.zhuandian.androidstudy.activity.view_activity;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

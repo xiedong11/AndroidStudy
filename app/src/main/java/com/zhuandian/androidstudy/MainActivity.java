@@ -6,11 +6,11 @@ import android.os.Bundle;
 import android.view.View;
 
 
-import com.zhuandian.AopTestActivity;
+import com.zhuandian.androidstudy.activity.AopTestActivity;
 import com.zhuandian.androidstudy.activity.AnnotationActivity;
 import com.zhuandian.androidstudy.activity.layout_activity.LayoutMainActivity;
 import com.zhuandian.androidstudy.activity.notification_activity.NotificationActivity;
-import com.zhuandian.androidstudy.view_activity.ViewMainActivity;
+import com.zhuandian.androidstudy.activity.view_activity.ViewMainActivity;
 
 import io.flutter.view.FlutterMain;
 

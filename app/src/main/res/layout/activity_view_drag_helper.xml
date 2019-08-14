@@ -4,8 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view_activity.ViewDragHelperActivity">
-    <com.zhuandian.androidstudy.view_activity.view.DragViewGroup
+    tools:context=".activity.view_activity.ViewDragHelperActivity">
+    <com.zhuandian.androidstudy.activity.view_activity.view.DragViewGroup
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -18,5 +18,5 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:background="@color/colorPrimary" />
-    </com.zhuandian.androidstudy.view_activity.view.DragViewGroup>
+    </com.zhuandian.androidstudy.activity.view_activity.view.DragViewGroup>
 </android.support.constraint.ConstraintLayout>

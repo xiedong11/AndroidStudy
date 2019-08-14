@@ -1,4 +1,4 @@
-package com.zhuandian.androidstudy.view_activity.view.banner;
+package com.zhuandian.androidstudy.activity.view_activity.view.banner;
 
 /**
  * desc :
