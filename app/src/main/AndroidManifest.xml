@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.AopTestActivity"></activity>
+        <activity android:name=".activity.RxjavaActivity"></activity>
+        <activity android:name=".activity.AopTestActivity" />
         <activity android:name=".AopTestActivity" />
         <activity android:name=".activity.AnnotationActivity" />
         <activity android:name=".activity.FlutterMainActivity" />

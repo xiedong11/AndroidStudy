@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.zhuandian.androidstudy.activity.AopTestActivity;
 import com.zhuandian.androidstudy.activity.AnnotationActivity;
+import com.zhuandian.androidstudy.activity.RxjavaActivity;
 import com.zhuandian.androidstudy.activity.layout_activity.LayoutMainActivity;
 import com.zhuandian.androidstudy.activity.notification_activity.NotificationActivity;
 import com.zhuandian.androidstudy.activity.view_activity.ViewMainActivity;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_flutter_aar).setOnClickListener(this);
         findViewById(R.id.btn_annotation).setOnClickListener(this);
         findViewById(R.id.btn_aop).setOnClickListener(this);
+        findViewById(R.id.btn_Rxjava).setOnClickListener(this);
 
 
 
@@ -57,6 +59,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_aop:
                 startActivity(new Intent(MainActivity.this, AopTestActivity.class));
                 break;
-        }
+
+            case R.id.btn_Rxjava:
+                startActivity(new Intent(MainActivity.this, RxjavaActivity.class));
+                break;}
     }
 }
