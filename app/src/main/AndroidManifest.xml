@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".activity.RxjavaActivity"></activity>
+        <activity android:name=".activity.handler_test.HandleTestActivity"></activity>
+        <activity android:name=".activity.handler_test.HandlerTestActivity" />
+        <activity android:name=".activity.RxjavaActivity" />
         <activity android:name=".activity.AopTestActivity" />
         <activity android:name=".AopTestActivity" />
         <activity android:name=".activity.AnnotationActivity" />
