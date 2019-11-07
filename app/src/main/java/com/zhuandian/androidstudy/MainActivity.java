@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_annotation).setOnClickListener(this);
         findViewById(R.id.btn_aop).setOnClickListener(this);
         findViewById(R.id.btn_Rxjava).setOnClickListener(this);
+        findViewById(R.id.btn_second_floor).setOnClickListener(this);
 
 
 
@@ -59,9 +60,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
             case R.id.btn_aop:
                 startActivity(new Intent(MainActivity.this, AopTestActivity.class));
                 break;
-
             case R.id.btn_Rxjava:
                 startActivity(new Intent(MainActivity.this, RxjavaActivity.class));
-                break;}
+                break;
+            case R.id.btn_second_floor:
+                break;
+        }
     }
 }
