@@ -9,6 +9,7 @@ import android.view.View;
 import com.zhuandian.androidstudy.activity.AopTestActivity;
 import com.zhuandian.androidstudy.activity.AnnotationActivity;
 import com.zhuandian.androidstudy.activity.RxjavaActivity;
+import com.zhuandian.androidstudy.activity.ThreadPoolTestActivity;
 import com.zhuandian.androidstudy.activity.layout_activity.LayoutMainActivity;
 import com.zhuandian.androidstudy.activity.notification_activity.NotificationActivity;
 import com.zhuandian.androidstudy.activity.view_activity.ViewMainActivity;
@@ -31,9 +32,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_aop).setOnClickListener(this);
         findViewById(R.id.btn_Rxjava).setOnClickListener(this);
         findViewById(R.id.btn_second_floor).setOnClickListener(this);
-
-
-
+        findViewById(R.id.btn_thread_pool).setOnClickListener(this);
 
 
     }
@@ -64,6 +63,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, RxjavaActivity.class));
                 break;
             case R.id.btn_second_floor:
+                break;
+            case R.id.btn_thread_pool:
+                startActivity(new Intent(MainActivity.this, ThreadPoolTestActivity.class));
                 break;
         }
     }
