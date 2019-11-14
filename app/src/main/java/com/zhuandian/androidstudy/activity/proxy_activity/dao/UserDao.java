@@ -7,5 +7,5 @@ package com.zhuandian.androidstudy.activity.proxy_activity.dao;
  */
 public interface UserDao {
 
-    void save();
+    void save(String name);
 }

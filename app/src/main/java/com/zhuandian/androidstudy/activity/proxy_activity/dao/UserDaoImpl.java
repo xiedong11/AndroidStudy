@@ -8,7 +8,7 @@ package com.zhuandian.androidstudy.activity.proxy_activity.dao;
  */
 public class UserDaoImpl implements UserDao {
     @Override
-    public void save() {
+    public void save(String name) {
         System.out.println("----已经保存数据!----");
     }
 }
