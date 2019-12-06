@@ -2,6 +2,8 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+apply plugin: 'org.greenrobot.greendao'
+
 import org.aspectj.bridge.IMessage
 import org.aspectj.bridge.MessageHandler
 import org.aspectj.tools.ajc.Main
@@ -99,6 +101,14 @@ android {
 //        }
 //    }
 }
+//https://blog.csdn.net/callmemrlu/article/details/81153685
+greendao {
+    schemaVersion 3 //数据库版本号
+    daoPackage 'com.zhuandian.androidstudy.dao'      //生成的DAO，DaoMaster和DaoSession的包名称。默认为源实体的包名称。
+    targetGenDir 'src/main/java'  //生成DaoMaster,DaoSession,Dao的目录路径。默认为构建目录（build / generated / source / greendao）中生成的源文件夹。
+    // generateTests   //设置为true以自动生成单元测试
+    //targetGenDirTests  //生成单元测试存储的基本目录。默认为src / androidTest / java。
+}
 
 dependencies {
     api(name: 'app-release', ext: 'aar')
@@ -119,4 +129,5 @@ dependencies {
 
     implementation 'io.reactivex:rxjava:1.1.0'
     implementation 'io.reactivex:rxandroid:1.1.0'
+    implementation 'org.greenrobot:greendao:3.2.2'
 }

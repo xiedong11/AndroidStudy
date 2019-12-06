@@ -73,5 +73,11 @@
             android:text="代理模式" />
 
 
+        <Button
+            android:id="@+id/btn_green_dao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GreenDao" />
+
     </LinearLayout>
 </ScrollView>

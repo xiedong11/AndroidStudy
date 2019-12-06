@@ -8,6 +8,7 @@ import android.view.View;
 
 import com.zhuandian.androidstudy.activity.AopTestActivity;
 import com.zhuandian.androidstudy.activity.AnnotationActivity;
+import com.zhuandian.androidstudy.activity.GreenDaoActivity;
 import com.zhuandian.androidstudy.activity.RxjavaActivity;
 import com.zhuandian.androidstudy.activity.ThreadPoolTestActivity;
 import com.zhuandian.androidstudy.activity.layout_activity.LayoutMainActivity;
@@ -35,6 +36,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_second_floor).setOnClickListener(this);
         findViewById(R.id.btn_thread_pool).setOnClickListener(this);
         findViewById(R.id.btn_proxy).setOnClickListener(this);
+        findViewById(R.id.btn_green_dao).setOnClickListener(this);
 
 
     }
@@ -71,6 +73,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_proxy:
                 startActivity(new Intent(MainActivity.this, ProxyActivity.class));
+                break;
+            case R.id.btn_green_dao:
+                startActivity(new Intent(MainActivity.this, GreenDaoActivity.class));
                 break;
 
         }
