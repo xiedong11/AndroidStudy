@@ -10,6 +10,7 @@ import com.zhuandian.androidstudy.activity.AopTestActivity;
 import com.zhuandian.androidstudy.activity.AnnotationActivity;
 import com.zhuandian.androidstudy.activity.GreenDaoActivity;
 import com.zhuandian.androidstudy.activity.RxjavaActivity;
+import com.zhuandian.androidstudy.activity.SecondFloorActivity;
 import com.zhuandian.androidstudy.activity.ThreadPoolTestActivity;
 import com.zhuandian.androidstudy.activity.layout_activity.LayoutMainActivity;
 import com.zhuandian.androidstudy.activity.notification_activity.NotificationActivity;
@@ -67,6 +68,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 startActivity(new Intent(MainActivity.this, RxjavaActivity.class));
                 break;
             case R.id.btn_second_floor:
+                startActivity(new Intent(MainActivity.this, SecondFloorActivity.class));
                 break;
             case R.id.btn_thread_pool:
                 startActivity(new Intent(MainActivity.this, ThreadPoolTestActivity.class));

@@ -16,7 +16,9 @@
         <activity android:name=".activity.GreenDaoActivity"></activity>
         <activity android:name=".activity.proxy_activity.ProxyActivity" />
         <activity android:name=".activity.ThreadPoolTestActivity" />
-        <activity android:name=".activity.SecondFloorActivity" />
+        <activity
+            android:name=".activity.SecondFloorActivity"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar" />
         <activity android:name=".activity.handler_test.HandleTestActivity" />
         <activity android:name=".activity.RxjavaActivity" />
         <activity android:name=".activity.AopTestActivity" />

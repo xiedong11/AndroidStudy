@@ -1,9 +1,74 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".activity.SecondFloorActivity">
 
-</android.support.constraint.ConstraintLayout>
+    <com.scwang.smartrefresh.layout.SmartRefreshLayout
+        android:id="@+id/refreshLayout"
+        android:layout_width="match_parent"
+        android:clipChildren="false"
+        app:srlAccentColor="@android:color/white"
+        android:layout_height="match_parent">
+
+        <com.scwang.smartrefresh.layout.header.TwoLevelHeader
+            android:id="@+id/secondFloorHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/iv_second_floor_bg"
+                android:layout_width="match_parent"
+                android:background="@drawable/image_second_floor"
+                android:layout_height="match_parent"/>
+
+            <FrameLayout
+                android:alpha="0"
+                android:id="@+id/fl_second_floor_content"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+                <ScrollView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textStyle="bold"
+                        android:textColor="#004899"
+                        android:text="alf;sdkfl;看了个卡掉了；是否快乐；对司法考试分开；到了是否快乐；双卡双待快乐；分开来说；对方考虑；舒服了；看到伤口陪我开发的是 v 没得说，。库罗德，。是快乐的时间违法，当时就分开了多少分，。第三名快乐的美食。，反动势力；的渴望快乐的是VS的，fjs.dv，是否经历都是免费的是，美丽似懂非懂分；塞法；了"
+                        android:textSize="55sp" />
+                </ScrollView>
+            </FrameLayout>
+
+            <com.scwang.smartrefresh.layout.header.ClassicsHeader
+                android:id="@+id/classics"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="?attr/actionBarSize"/>
+        </com.scwang.smartrefresh.layout.header.TwoLevelHeader>
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:background="#fff"
+                android:layout_marginTop="60dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="alf;sdkfl;看了个卡掉了；是否快乐；对司法考试分开；到了是否快乐；双卡双待快乐；分开来说；对方考虑；舒服了；看到伤口陪我开发的是 v 没得说，。库罗德，。是快乐的时间违法，当时就分开了多少分，。第三名快乐的美食。，反动势力；的渴望快乐的是VS的，fjs.dv，是否经历都是免费的是，美丽似懂非懂分；塞法；了"
+                android:textSize="55sp" />
+        </ScrollView>
+    </com.scwang.smartrefresh.layout.SmartRefreshLayout>
+
+    <TextView
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#fe1200"
+        android:gravity="center"
+        android:text="标题"/>
+
+
+</FrameLayout>
