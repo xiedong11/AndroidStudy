@@ -132,3 +132,22 @@ dependencies {
     implementation 'org.greenrobot:greendao:3.2.2'
     implementation project(path: ':refresh-layout')
 }
+
+task uploadApk{
+    doFirst{
+        print("=================  start upload apk 00000=========================")
+    }
+    print("=================  start upload apk =========================")
+    doLast{
+        print("=================  start upload apk 1111=========================")
+    }
+}
+
+
+tasks.whenTaskAdded { task ->
+    if (task.name == 'assembleDebug') {
+        task.doFirst {
+            println("=====================assembleDebug doFirst=========================")
+        }
+    }
+}
