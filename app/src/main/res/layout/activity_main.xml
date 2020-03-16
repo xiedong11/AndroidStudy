@@ -79,5 +79,11 @@
             android:layout_height="wrap_content"
             android:text="GreenDao" />
 
+        <Button
+            android:id="@+id/btn_drag_recyclerview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="列表拖拽排序" />
+
     </LinearLayout>
 </ScrollView>

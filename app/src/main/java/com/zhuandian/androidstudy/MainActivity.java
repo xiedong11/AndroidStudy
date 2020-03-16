@@ -12,6 +12,7 @@ import com.zhuandian.androidstudy.activity.GreenDaoActivity;
 import com.zhuandian.androidstudy.activity.RxjavaActivity;
 import com.zhuandian.androidstudy.activity.SecondFloorActivity;
 import com.zhuandian.androidstudy.activity.ThreadPoolTestActivity;
+import com.zhuandian.androidstudy.activity.darg_list.DragRecyclerViewActivity;
 import com.zhuandian.androidstudy.activity.layout_activity.LayoutMainActivity;
 import com.zhuandian.androidstudy.activity.notification_activity.NotificationActivity;
 import com.zhuandian.androidstudy.activity.proxy_activity.ProxyActivity;
@@ -38,6 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         findViewById(R.id.btn_thread_pool).setOnClickListener(this);
         findViewById(R.id.btn_proxy).setOnClickListener(this);
         findViewById(R.id.btn_green_dao).setOnClickListener(this);
+        findViewById(R.id.btn_drag_recyclerview).setOnClickListener(this);
 
 
     }
@@ -78,6 +80,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 break;
             case R.id.btn_green_dao:
                 startActivity(new Intent(MainActivity.this, GreenDaoActivity.class));
+                break;
+            case R.id.btn_drag_recyclerview:
+                startActivity(new Intent(MainActivity.this, DragRecyclerViewActivity.class));
                 break;
 
         }
