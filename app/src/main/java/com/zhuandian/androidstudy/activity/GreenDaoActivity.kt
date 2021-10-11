@@ -1,7 +1,7 @@
 package com.zhuandian.androidstudy.activity
 
 import android.database.sqlite.SQLiteDatabase
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import com.zhuandian.androidstudy.R
 import com.zhuandian.androidstudy.dao.DaoMaster

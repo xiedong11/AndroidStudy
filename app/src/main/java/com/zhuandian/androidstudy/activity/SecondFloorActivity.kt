@@ -1,7 +1,7 @@
 package com.zhuandian.androidstudy.activity
 
 import android.os.Bundle
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.widget.Toast
 import com.scwang.smartrefresh.layout.api.OnTwoLevelListener
 import com.scwang.smartrefresh.layout.api.RefreshHeader

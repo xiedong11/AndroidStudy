@@ -1,9 +1,9 @@
 package com.zhuandian.androidstudy.activity.layout_activity;
 
 import android.graphics.Color;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.RecyclerView;
+import androidx.recyclerview.widget.RecyclerView;
 
 import com.alibaba.android.vlayout.DelegateAdapter;
 import com.alibaba.android.vlayout.VirtualLayoutManager;

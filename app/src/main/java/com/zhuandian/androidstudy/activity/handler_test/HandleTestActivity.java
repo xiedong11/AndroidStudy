@@ -1,7 +1,7 @@
 package com.zhuandian.androidstudy.activity.handler_test;
 
 import android.os.Looper;
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.zhuandian.androidstudy.R;

@@ -1,10 +1,9 @@
 package com.zhuandian.androidstudy.activity.proxy_activity;
 
-import android.support.v7.app.AppCompatActivity;
+import androidx.appcompat.app.AppCompatActivity;
 import android.os.Bundle;
 
 import com.zhuandian.androidstudy.R;
-import com.zhuandian.androidstudy.activity.proxy_activity.dao.UserDao;
 import com.zhuandian.androidstudy.activity.proxy_activity.dao.UserDaoImpl;
 import com.zhuandian.androidstudy.activity.proxy_activity.proxy.UserDaoProxy;
 public class ProxyActivity extends AppCompatActivity {
